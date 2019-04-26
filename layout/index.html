@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>СуперАвто</title>
+    <link rel="stylesheet" href="assets/css/base.css">
+    <script src="assets/js/jquery-3.3.1.min.js"></script>
+</head>
+<body style="display:none;">
+
+<div class="screen screen-start" id="login">
+    <div class="panel">
+        <h1>Имя игрока</h1>
+
+        <form onsubmit="return $('button');">
+            <input id="username" type="text" placeholder="Введите свое имя">
+            <button type="button" id="start" disabled="disabled">Далее</button>
+        </form>
+    </div>
+</div>
+
+<div class="screen screen-start" id="instr">
+    <div class="panel">
+        <h1>СуперАвто</h1>
+        <p>
+            Инструкция Инструкция Инструкция Инструкция Инструкция Инструкция Инструкция
+            Инструкция Инструкция Инструкция Инструкция Инструкция Инструкция Инструкция Инструкция
+        </p>
+        <br>
+        <button type="button" id="next">Продолжить</button>
+    </div>
+</div>
+
+<div class="screen screen-game">
+    <div class="game-panel game-panel-user">
+        <div class="user-info">Имя игрока</div>
+        <div class="panel-2">
+            <div class="score-value">
+                HP <span>3</span>
+            </div>
+        </div>
+    </div>
+    <div class="forelayer">
+        <div class="player">
+            <img src="assets/img/player.png" alt="player">
+        </div>
+        <div class="carplace"></div>
+        <div class="car1">
+            <img src="assets/img/car1.png" alt="car">
+        </div>
+        <div class="car2">
+            <img src="assets/img/car2.png" alt="car">
+        </div>
+        <div class="car3">
+            <img src="assets/img/car3.png" alt="car">
+        </div>
+    </div>
+
+
+</div>
+
+<div class="game-panel game-panel-scores">
+    <div class="timer">Время: <span class="time">00:00</span></div>
+    <div class="kills">Очки: 0</div>
+</div>
+
+<div class="game-panel game-panel-skills">
+    <img id="power-skill" src="assets/img/power-skill-1.png" alt="Суперсила">
+</div>
+</div>
+<div class="screen screen-ranking">
+    <div class="panel">
+        <h1>Лучшие результаты</h1>
+        <table>
+            <tr>
+                <th>#</th>
+                <th>Имя игрока</th>
+                <th>Очки</th>
+                <th>Время</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Игрок</td>
+                <td>100</td>
+                <td>02:12</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Игрок</td>
+                <td>100</td>
+                <td>02:12</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Игрок</td>
+                <td>100</td>
+                <td>02:12</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Игрок</td>
+                <td>100</td>
+                <td>02:12</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Игрок</td>
+                <td>100</td>
+                <td>02:12</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Игрок</td>
+                <td>100</td>
+                <td>02:12</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Игрок</td>
+                <td>100</td>
+                <td>02:12</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Игрок</td>
+                <td>100</td>
+                <td>02:12</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Игрок</td>
+                <td>100</td>
+                <td>02:12</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Игрок</td>
+                <td>100</td>
+                <td>02:12</td>
+            </tr>
+        </table>
+        <div id="begin">
+            <button onclick="restart()">Начать заново!</button>
+        </div>
+    </div>
+</div>
+<script src="assets/js/game.js"></script>
+</body>
+</html>
