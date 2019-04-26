@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+@font-face {
+    font-family: VEGeorgianBrushCyrillicGreek;
+    src: url(../fonts/10558.ttf);
+}
+
+body {
+    font-family: VEGeorgianBrushCyrillicGreek;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    line-height: 1.3;
+}
+
+ul li,
+ol li {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+.screen,
+.score-value span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.screen-start,
+.screen-name,
+.screen-ranking {
+    width: 40vw;
+    height: 40vh;
+    border-radius: 10px;
+}
+
+.screen-ranking { height: 60vh; }
+
+.screen-game.blackout {
+    transition: .3s ease-in-out;
+    box-shadow: inset 0 0 1000px 1000px rgba(0, 0, 0, .8);
+}
+
+.screen-ranking {
+    width: 50vw;
+}
+
+.screen-game {
+    width: 60vw;
+    height: 100vh;
+    background: url(../img/bg-game.jpg);
+    background-size: cover;
+    overflow: hidden;
+    user-select: none;
+}
+
+.panel {
+    width: 100%;
+    padding: 8vh 5vw;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border-radius: 5px;
+}
+
+table {
+    overflow-y: auto;
+    max-height: 27vh;
+    display: block;
+    margin-bottom: 2vh;
+}
+
+tr > th:nth-child(1),
+tr > td:nth-child(1) {
+    width: 10%;
+    text-align: left;
+}
+
+tr > th:nth-child(2),
+tr > td:nth-child(2) {
+    width: 200px;
+    text-align: left;
+}
+
+tr > td:nth-child(3) {
+    width: 200px;
+    text-align: center;
+}
+
+td, th {
+    line-height: 2;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+    text-align: center;
+}
+
+input[type='text'] {
+    min-width: 200px;
+}
+
+input[type='text'],
+input[type='submit'],
+button {
+    padding: 9px;
+}
+
+input[type='submit'],
+button {
+    background: #778d94;
+    color: #fff;
+    border: none;
+}
+
+#power-skill {
+    width: 100px;
+}
+
+.game-panel {
+    position: absolute;
+    color: #fff;
+}
+
+.game-panel-skills {
+    right: 430px;
+    bottom: 30px;
+}
+
+.game-panel-user {
+    left: 30px;
+    top: 30px;
+}
+
+.game-panel-scores {
+    bottom: 30px;
+    left: 430px;
+    font-size: 18pt;
+
+}
+
+.user-info {
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+.panel-1,
+.panel-2,
+.panel-3 {
+    height: 23px;
+    background: white;
+    margin-bottom: 4px;
+    clip-path: polygon(0% 0%, 100% 0%, 90% 100%, 0% 100%);
+    position: relative;
+}
+
+.panel-1 {
+    width: 200px;
+}
+
+.panel-2 {
+    width: 200px;
+}
+
+.panel-3 {
+    width: 200px;
+}
+
+.score-value {
+    width: 100%;
+    height: 100%;
+}
+
+.panel-1 .score-value {
+    background: #9f000a;
+}
+
+.panel-2 .score-value {
+    background: #004bb8;
+}
+
+.panel-3 .score-value {
+    background: #00254f;
+}
+
+.score-value span {
+    padding-right: 13px;
+}
+
+.game-panel-skills img {
+    margin-left: -1px;
+}
+
+.show {
+    z-index: 300;
+}
+
+#begin {
+    text-align: center;
+}
+
+button:disabled {
+    background: #d9e0e2;
+}
+
+.player {
+    width: 120px;
+    position: absolute;
+    /*border: 1px solid red;*/
+}
+
+.player img {
+    width: 120px;
+}
+
+.car1, .car2, .car3 {
+    width: 100px;
+    position: absolute;
+    bottom: 5000px;
+    /*border: 1px solid red;*/
+}
+
+.car1 img, .car2 img, .car3 img {
+    width: 100px;
+}
